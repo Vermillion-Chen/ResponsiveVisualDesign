@@ -1,4 +1,4 @@
-# These 5 projects were created as part of the freeCodeCamp Response Web Design Certificate.
+# These 5 projects were created as part of the freeCodeCamp Responsive Web Design Certificate.
 ---
 ## Tribute Page
 The task is to create a tribute page towards a famous person or thing, I chose to do a tribute page on Yuan Longping, an agronomist who has lifted millions out of hunger, to honour his memory as he has recently passed as of the creation of this project.
