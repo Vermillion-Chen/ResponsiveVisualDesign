@@ -1,9 +1,9 @@
-# These projects were created as part of the freeCodeCamp Response Web Design Certificate.
-
+# These 5 projects were created as part of the freeCodeCamp Response Web Design Certificate.
+---
 ## Tribute Page
 The task is to create a tribute page towards a famous person or thing, I chose to do a tribute page on Yuan Longping, an agronomist who has lifted millions out of hunger, to honour his memory as he has recently passed as of the creation of this project.
 
-Additionally, the project must follow these 9 user stories:
+Additionally, the project must follow these 9 requirements:
 1. An element with a corresponding id="main", which contains all other elements.
 2. An element with a corresponding id="title", which contains a string that describes the subject of the tribute page.
 3. A div element with a corresponding id="img-div".
@@ -13,7 +13,7 @@ Additionally, the project must follow these 9 user stories:
 7. A corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. 
 8. The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 9. The img element should be centered within its parent element.
-
+---
 ## Survey Form
 The task is to create a survey page. I decided to create one on the impact of coronavirus on students in Canada.
 
@@ -34,3 +34,5 @@ Additionally, the project must follow these 16 requirements:
 14. Several fields from a series of checkboxes, each of which must have a value attribute.
 15. A textarea at the end for additional comments.
 16. A button with id="submit" to submit all inputs.
+---
+## Product Landing Page
