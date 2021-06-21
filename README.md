@@ -1,38 +1,36 @@
-This project was created as part of the freeCodeCamp Response Web Design Certificate, 
-The purpose is to create a survey page. 
-I decided to create one on the impact of coronavirus on students in Canada.
+# These projects were created as part of the freeCodeCamp Response Web Design Certificate, 
 
-Additionally, the project must follow these 12 user stories:
-User Story #1: I can see a title with id="title" in H1 sized text.
+## Tribute Page
+The task is to create a tribute page towards a famous person or thing, I chose to do a tribute page on Yuan Longping, an agronomist who has lifted millions out of hunger, to honour his memory as he has recently passed as of the creation of this project.
 
-User Story #2: I can see a short explanation with id="description" in P sized text.
+Additionally, the project must follow these 9 user stories:
+1. An element with a corresponding id="main", which contains all other elements.
+2. An element with a corresponding id="title", which contains a string that describes the subject of the tribute page.
+3. A div element with a corresponding id="img-div".
+4. An img element with a corresponding id="image" within the img-div element.
+5. An element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div, within the img-div element, 
+6. An element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+7. A corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. 
+8. The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+9. The img element should be centered within its parent element.
 
-User Story #3: I can see a form with id="survey-form".
+## Survey Form
+The task is to create a survey page. I decided to create one on the impact of coronavirus on students in Canada.
 
-User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
-
-User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
-
-User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-
-User Story #7: Inside the form, I can enter a number in a field with id="number".
-
-User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-
-User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
-
-User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
-
-User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
-
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
-
-You can build your project
+Additionally, the project must follow these 16 requirements:
+1. Title with id="title" in H1 sized text.
+2. Explanation with id="description" in p sized text.
+3. Form with id="survey-form".
+4. Required to enter name in a field with id="name".
+5. Required to enter an email in a field with id="email".
+6. HTML5 validation error for emails not formatted correctly. 
+7. Optional enter a number in a field with id="number".
+8. HTML5 validation error for non-numbers in the number input.
+9. HTML5 validation error for numbers outside the range of number input.
+10. For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+11. Placeholder text that are description or instructions for the name, email, and number input fields.
+12. Dropdown option with corresponding id="dropdown".
+13. One or more groups of radio buttons. Each group should be grouped using the name attribute.
+14. Several fields from a series of checkboxes, each of which must have a value attribute.
+15. A textarea at the end for additional comments.
+16. A button with id="submit" to submit all inputs.
