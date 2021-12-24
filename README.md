@@ -36,3 +36,24 @@ Additionally, the project must follow these 16 requirements:
 16. A button with id="submit" to submit all inputs.
 ---
 ## Product Landing Page
+The task is to create a product-landing page. I create one based on a fictitious business that sells bricks, because they are chains of blocks.
+
+Additionally, the project must follow these 15 requirements:
+1. A header element with a corresponding id="header".
+2. An image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+3. A nav element with a corresponding id="nav-bar" within #geader
+4. At least three clickable elements inside the nav element, each with the class nav-link.
+5. When a .nav-link button in the nav element is clicked, it goes to the corresponding section of the landing page.
+6. An embedded product video with id="video".
+7. A form element with a corresponding id="form".
+8. Within the form, there is an input field with id="email" where an email address can be entered
+9. The #email input field should have placeholder text to let the user know what the field is for.
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+11. Within the form, there is a submit input with a corresponding id="submit".
+12. When the #submit element is clicked, the email is submitted to a static page (https://www.freecodecamp.com/email-submit).
+13. The navbar should always be at the top of the viewport.
+14. At least one media query.
+15. Utilize CSS flexbox at least once.
+---
+## Technical Documentation Page
+The task is to create a product-landing page.
