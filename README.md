@@ -1,4 +1,4 @@
-# These 5 projects were created as part of the freeCodeCamp Responsive Web Design Certificate.
+# These 5 projects were created as part of the freeCodeCamp Responsive Web Design [Certificate](https://www.freecodecamp.org/certification/fcc6833dd0b-d484-48e3-a6d7-73497e1c4ed7/responsive-web-design).
 ---
 ## Tribute Page
 The task is to create a tribute page towards a famous person or thing, I chose to do a tribute page on Yuan Longping, an agronomist who has lifted millions out of hunger, to honour his memory as he has recently passed as of the creation of this project.
@@ -56,4 +56,22 @@ Additionally, the project must follow these 15 requirements:
 15. Utilize CSS flexbox at least once.
 ---
 ## Technical Documentation Page
-The task is to create a product-landing page.
+The task is to create a product-landing page. I created one with a nice sidebar detailing some Python fundamentals.
+
+Additionally, the project must follow these 15 requirements:
+1. A main element with a corresponding id="main-doc", which contains the page's main content.
+2. Within the #main-doc element, minimum of 5 section elements, each with a class of main-section.
+3. The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+4. Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores.
+5. The .main-section elements should contain at least 10 p elements total.
+6. The .main-section elements should contain at least 5 code elements total.
+7. The .main-section elements should contain at least 5 li items total.
+8. A nav element with a corresponding id="navbar".
+9. The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+10. Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+11. The header element in the navbar must come before any link (a) elements in the navbar.
+12. Each element with the class of nav-link should contain text that corresponds to the header text within each section.
+13. When a navbar element is clicked, the page should navigate to the corresponding section of the main-doc element.
+14. On regular sized devices, the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+15. At least one media query.
+
