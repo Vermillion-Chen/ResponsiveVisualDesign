@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP" rel="stylesheet" type="text/css">
+
+<style>
+    html, body {
+        margin:0;
+        padding:0;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    head {
+        text-align: center;
+        width: 600px;
+        height: auto;
+        
+    }
+    h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -2;
+      background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(80, 0, 130, 0.5)), url("https://thumbs.dreamstime.com/b/empty-classroom-interior-wooden-desks-chairs-maps-white-board-52354235.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .blur {
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: -2;
+        height: 100%;
+        width: 100%;
+    }
+
+    #survey-form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 600px;
+        height: auto;
+        top: 90px;
+        color: white;
+        background-color: rgba(52, 52, 52, 0.95);
+        position: absolute;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .details {
+    padding: 20px;
+    text-align: left;
+    }
+
+    #name, #email, #number, #dropdown, textarea {
+        margin-bottom: 5%;
+        width: 70%;
+    }
+    
+    input[type="radio"] {
+        width: 10;
+        margin-bottom: 1%;
+    }
+    textarea {
+        height: 4em;
+    }
+    .leftarrow:hover, .rightarrow:hover {
+    filter: drop-shadow(6px 10px 4px rgb(0 0 0 / 0.4));
+    }
+    .leftarrow {
+        position: fixed;
+        top: 40%;
+        left: 1em;
+        animation: fadeDown 1s;
+    }
+    .rightarrow {
+        position: fixed;
+        top: 40%;
+        right: 1em;
+        animation: fadeDown 1s;
+    }
+    @keyframes fadeDown {
+        from{
+            opacity: 0;
+            transform: translateY(-20%)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Impact of Coronavirus on Canadian Students Survey Form</title>
+    <h1 id="title">Impact of Coronavirus on <br> Canadian Students Survey Form</h1>
+</head>
+
+<body>
+    <div class="blur"></div>
+    <div id="survey-form">
+        <div class="details">
+            <div id="number-label">Name: </div>
+            <input id="name" placeholder="Enter your name" required></input>
+            <div id="email-label">Email: </div>
+            <input id="email" type="email" placeholder="Enter your email" required></input>
+            <div id="number-label">Years of Uni Study: </div>
+            <input id="number" min="0" max="20" type="number" placeholder="Enter years studied in university" required></input>
+            <div id="dropdown-label">University: </div>
+            <select id="dropdown">
+             <option value="" selected disabled hidden>Select an option</option>
+             <option value="UofT">University of Toronto</option>
+             <option value="McGill">McGill University</option>
+             <option value="UBC">University of British Columbia</option>
+             <option value="UdeM">Université de Montréal</option>
+             <option value="UofA">University of Alberta</option>
+             <option value="McMaster">McMaster University</option>
+             <option value="UWaterloo">University of Waterloo</option>
+             <option value="WesternU">Western University</option>
+             <option value="UOttawa">University of Ottawa</option>
+             <option value="UCalgary">University of Calgary</option>
+             <option value="None">I'm not in university</option>
+             <option value="Bad">I go to a bad university</option>
+            </select>
+
+            <div id="radio-label">How has your experience with online learning been? <br>
+              <input id="Very-Good" type="radio" name="experience">Very Good</input><br>
+              <input id="Good" type="radio" name="experience">Good</input><br>
+              <input id="Fair" type="radio" name="experience">Fair</input><br>
+              <input id="Poor" type="radio" name="experience">Poor</input><br>
+              <input id="Very Poor" type="radio" name="experience">Very Poor</input>
+            </div><br>
+
+            <div id="radio-label">How was the response of your university in adapting to online learning circumstances? <br>
+              <input id="Very-Good" type="radio" name="circumstance">Very Good</input><br>
+              <input id="Good" type="radio" name="circumstance">Good</input><br>
+              <input id="Fair" type="radio" name="circumstance">Fair</input><br>
+              <input id="Poor" type="radio" name="circumstance">Poor</input><br>
+              <input id="Very Poor" type="radio" name="circumstance">Very Poor</input>
+            </div><br>
+
+            <div id="checkbox-label">How could your university respond better? <br>
+              <input type="checkbox" name="response">Mental Health</input><br>
+              <input type="checkbox" name="response">Motivation and Focus</input><br>
+              <input type="checkbox" name="response">Flexibility and Access</input><br>
+              <input type="checkbox" name="response">Assignments and Exams</input><br>
+            </div><br>
+
+            <div id="textarea">Additional Comments? </div>
+            <textarea type="text" placeholder="Enter your comment here..."></textarea><br>
+
+
+            <input type="submit"></input>
+
+        </div>
+
+    
+    </div>
+    <div class="leftarrow"><a href="Tribute-Page-Project.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line x1="0.118567" y1="37.7115" x2="30.1186" y2="-14.25" stroke="white" stroke-width="5"/>
+            <line x1="0.165063" y1="34.7121" x2="30.1651" y2="86.6736" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+    <div class="rightarrow"><a href="Product-Landing-Page-Project.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 -0.866025 -0.866025 0.5 22.7164 38.9615)" stroke="white" stroke-width="5"/>
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 0.866025 0.866025 0.5 27 35.9621)" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white" transform="matrix(-1 0 0 1 25 0)"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+</body>
+</html>

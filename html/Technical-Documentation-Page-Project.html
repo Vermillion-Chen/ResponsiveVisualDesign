@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Technical Documentation Page</title>
+    <script src="https://kit.fontawesome.com/c9fbfc084b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+    }
+    a:visited { 
+        color: #FFFFFF;
+    }
+    code {
+        display: block;
+        background-color: #b8b8b8;
+        margin: 3px;
+        padding: 3px;
+        border-radius: 4px;
+        font-style: italic;
+    }
+    .container {
+        display: flex;
+        position: relative;
+    }
+    .container .sidebar{
+        position: fixed;
+        height: 100%;
+        width: 200px;
+        padding: 15px 0px;
+        background: #376f9E;
+    }
+    .container .sidebar h2{
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+
+    }
+    .container .sidebar ul li{
+        display: block;
+        padding: 5px;
+        border-bottom: 0.5px solid #1e3d57;
+        border-top: 0.5px solid #1e3d57;
+    }
+    .container .sidebar ul li a{
+        display: block;
+    }
+
+    .container .sidebar ul li:hover{
+        background: #1e3d57;
+    }
+    .container .sidebar ul li a:hover{
+        color: #FFFFFF;
+    }
+
+    .container main{
+        width: 100%;
+        margin-left: 200px;
+    }
+
+    .main-section {
+        padding-top: 20px;
+        margin: 20px;
+        color: #717171;
+        line-height: 25px;
+    }
+    
+    .main-section div{
+        margin-bottom: 20px;
+    }
+    .main-section p{
+        padding-left: 10px;
+    }
+    .main-section ol li{
+        padding-left: 10px;
+    }
+    ol {
+        list-style-position: inside;
+    }
+    ::-webkit-scrollbar-track{
+        background:hsl(120 75% 50% / 1);
+        border-radius: 100vw;
+        margin-block: 0.5em;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: aquamarine;
+        border-radius: 100vw;
+    }
+    .leftarrow:hover, .rightarrow:hover {
+    filter: drop-shadow(6px 10px 4px rgb(0 0 0 / 0.4));
+    }
+    .leftarrow {
+        position: fixed;
+        top: 40%;
+        left: 1em;
+        animation: fadeDown 1s;
+    }
+    .rightarrow {
+        position: fixed;
+        top: 40%;
+        right: 1em;
+        animation: fadeDown 1s;
+    }
+    @keyframes fadeDown {
+        from{
+            opacity: 0;
+            transform: translateY(-20%)
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+
+    
+    <div class="sidebar">
+        <h2><i class="fab fa-python"></i> Python</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#print()">Print</a></li>
+            <li><a href="#basic_arithmetic">Basic Arithmetic</a></li>
+            <li><a href="#user_stories">User Stories</a></li>
+        </ul>
+    </div>
+        <main id="main-doc">
+            <section class="main-section" id="introduction" #introduction>
+            <h1>Introduction</h1>
+            <p> Python is a high-level programming langauge which emphasizes code-readability. 
+                It is designed to be general-purpose, which makes it a good starter langauge
+                and lets developers focus on the code rather than the subtleties of syntax.
+                The popularity of Python also means that there are many versatile packages
+                designed by other developers.
+            </p>
+            <p>
+                Examples of Python objects include strings and integers. Python has no character datatype, and integers are 
+                automatically converted to float values when the situation arises. 
+                Python strings are denoted with quotation marks, and quotation mark-less words which are not reserved words
+                are variables (reserved words are Python keywords that already have a meaning within Python).
+                Objects are assigned to variables through the equals sign '=', no need for declaring types.
+                In this snippet of code, the left is a variable, and the right is a string:
+                <code>
+                    string = "I'm a string!"
+                </code>
+            </p>
+            </section>
+            <section class="main-section" id="print()" #print>
+            <h1>print()</h1>
+            <p>The print() statement is a relatively simple function as its effects are immediately visible. It returns
+                nothing but outputs its input on the command line. 
+            </p>
+            <code>
+                print("Hello World")<br>
+                >>> Hello World
+            </code>
+            Print can take several inputs by using commas, or one combined input through concententation. In the case where
+            several inputs are taken, a seperator will be put between them, and by default it is the empty space ' ' character. 
+            <code>
+                print("Hello",  "World")<br>
+                >>> Hello World
+                <br><br>
+                print("Hello" + " " + "World")<br>
+                >>> Hello World
+            </code>
+            </section>
+            <section class="main-section" id="basic_arithmetic" #basic-arithmetic>
+            <h1>Basic Arithmetic</h1>
+                <p>
+                    <ul>
+                        <li><code>+</code> will add two numbers, or concatenate two strings.</li>
+                        <li><code>-</code> will subtract two numbers.</li>
+                        <li><code>*</code> will multiply two numbers, <code>**</code> will expontentiate two numbers.</li>
+                        <li><code>/</code> will divide two numbers, <code>//</code> will floor divide two numbers.</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section" id="user_stories" #user-stories>
+                <h1>User Stories</h1>
+                <p><ol><li>I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).</li>
+                <li>Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.</li>
+                <li>The first element within each .main-section should be a header element which contains text that describes the topic of that section.</li>
+                <li>Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it.</li>
+                Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").</li>
+                <li>The .main-section elements should contain at least 10 p elements total.</li>
+                <li>The .main-section elements should contain at least 5 code elements total.</li>
+                <li>The .main-section elements should contain at least 5 li items total.</li>
+                <li>I can see a nav element with a corresponding id="navbar".</li>
+                <li>The navbar element should contain one header element which contains text that describes the topic of the technical documentation.</li>
+                <li> Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.</li>
+                <li> The header element in the navbar must come before any link (a) elements in the navbar.</li>
+                <li> Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").</li>
+                <li> When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.</li>
+                <li> On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.</li>
+                <li> My Technical Documentation page should use at least one media query.</li>
+                </ol></p>
+            </section>
+            </main>
+        </div>
+    <div>
+        <div class="leftarrow"><a href="Product-Landing-Page-Project.html">
+            <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_7_3)">
+                <line x1="0.118567" y1="37.7115" x2="30.1186" y2="-14.25" stroke="white" stroke-width="5"/>
+                <line x1="0.165063" y1="34.7121" x2="30.1651" y2="86.6736" stroke="white" stroke-width="5"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_7_3">
+                <rect width="25" height="72" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+        </div>
+        <div class="rightarrow"><a href="../index.html">
+            <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_7_3)">
+                <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 -0.866025 -0.866025 0.5 22.7164 38.9615)" stroke="white" stroke-width="5"/>
+                <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 0.866025 0.866025 0.5 27 35.9621)" stroke="white" stroke-width="5"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_7_3">
+                <rect width="25" height="72" fill="white" transform="matrix(-1 0 0 1 25 0)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+        </div>
+</body>
+</html>

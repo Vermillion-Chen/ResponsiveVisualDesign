@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Chen Responsive Web Design Projects</title>
+    <link rel="icon" href="./assets/ChenX.jpg">
+    <meta property="og:image" content="./assets/ChenX.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+</head>
+<style>
+html {
+    background-color: #424242;
+}
+.certificate {
+    padding-top: 5%;
+    margin: auto;
+    text-align: center;
+    width: 100vh;
+}
+img {
+    width: 100vh;
+}
+
+.leftarrow:hover, .rightarrow:hover {
+    filter: drop-shadow(6px 10px 4px rgb(0 0 0 / 0.4));
+}
+.leftarrow {
+    position: fixed;
+    top: 40%;
+    left: 1em;
+    animation: fadeDown 1s;
+}
+.rightarrow {
+    position: fixed;
+    top: 40%;
+    right: 1em;
+    animation: fadeDown 1s;
+}
+@keyframes fadeDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20%)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+<body>
+
+    <div class="leftarrow"><a href="html/Technical-Documentation-Page-Project.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line x1="0.118567" y1="37.7115" x2="30.1186" y2="-14.25" stroke="white" stroke-width="5"/>
+            <line x1="0.165063" y1="34.7121" x2="30.1651" y2="86.6736" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+    <div class="certificate">
+        <img src="assets/Certificate.png">
+    </div>
+    <div class="rightarrow"><a href="html/Tribute-Page-Project.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 -0.866025 -0.866025 0.5 22.7164 38.9615)" stroke="white" stroke-width="5"/>
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 0.866025 0.866025 0.5 27 35.9621)" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white" transform="matrix(-1 0 0 1 25 0)"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+
+</body>
+</html>

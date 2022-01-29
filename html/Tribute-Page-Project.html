@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Yuan Longping Tribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9fbfc084b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body, html {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+*{
+    text-decoration: none;
+}
+
+h1 {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: left;
+    font-size: 72px;
+}
+#img-caption {
+    position: absolute;
+    top: 150px;
+    left: 16px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 36px;
+}
+img {
+    position: absolute;
+    opacity: 0.45;
+    width: 100%;
+    height: 100vh;
+    margin: auto;;
+    z-index: -1;
+}
+#tribute-info {
+    position: absolute;
+    bottom: 1%;
+    left: 16px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.tribute-link {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    text-align: center;
+    padding: 15px;
+    margin: 0 2% 0 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+i {
+    font-size: 50px;
+}
+
+.leftarrow:hover, .rightarrow:hover {
+    filter: drop-shadow(6px 10px 4px rgb(0 0 0 / 0.4));
+}
+.leftarrow {
+    position: fixed;
+    top: 40%;
+    left: 1em;
+    animation: fadeDown 1s;
+}
+.rightarrow {
+    position: fixed;
+    top: 40%;
+    right: 1em;
+    animation: fadeDown 1s;
+}
+@keyframes fadeDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20%)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+    
+<body>
+    <header id="img-div">
+        
+        <h1>Yuan Longping 袁隆平</h1>
+        <div id="img-caption">The Father of Hybrid Rice</div>
+    </header>
+    <img id="img" src="../assets/YuanLongPing.jpg" alt="Yuan Longping working on the field">
+
+    <div id="tribute-info">
+        <p> Yuan Longping was a Chinese agronomist who pioneered the first hybrid rice varieties. In 1964, Yuan discovered a new rice species
+        which had a greater yield than the common rice at the time. Yuan spent the next 10 years of his life toiling to create a hybrid rice strain that would
+        allow for its mass-production. His end product produced 20% more rice, which is estimated to be able to feed 70 million more people. This would grant 
+        him the title "The Father of Hybrid Rice" and put China at the forefront of rice production.
+        <br>
+        Yuan advocated for the distrubtion of knowledge, and this technology would be later shared worldwide. 
+        Additionally he would also donate crucial rice strains sustainable in tropical climates for their usage. 
+        His hydrid rice currently contributes to 20% of the world's rice output. 
+        </p>
+    </div>
+    <p class="tribute-link">Learn More:<br><br>
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Yuan_Longping" target="_blank"><i class="fas fa-globe"></i></a><br><br>
+        <a id="tribute-link" href="https://www.nature.com/articles/d41586-021-01732-2" target="_blank"><i class="fas fa-leaf"></i></a><br><br>
+        <a id="tribute-link" href="https://www.washingtonpost.com/local/obituaries/yuan-longping-dead/2021/05/25/e23a377e-bd5a-11eb-b26e-53663e6be6ff_story.html" target="_blank"><i class="fas fa-flag-usa"></i></a>
+    </p>
+
+    <div class="leftarrow"><a href="../index.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line x1="0.118567" y1="37.7115" x2="30.1186" y2="-14.25" stroke="white" stroke-width="5"/>
+            <line x1="0.165063" y1="34.7121" x2="30.1651" y2="86.6736" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+    <div class="rightarrow"><a href="Survey-Page-Project.html">
+        <svg width="50" height="144" viewBox="0 0 25 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7_3)">
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 -0.866025 -0.866025 0.5 22.7164 38.9615)" stroke="white" stroke-width="5"/>
+            <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(-0.5 0.866025 0.866025 0.5 27 35.9621)" stroke="white" stroke-width="5"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7_3">
+            <rect width="25" height="72" fill="white" transform="matrix(-1 0 0 1 25 0)"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+    </div>
+</body>
+</html>
